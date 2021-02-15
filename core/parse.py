@@ -1,5 +1,7 @@
 def add(mathDef):
     b = mathDef.split("+")
+    if len(b) == 0:
+        return 0
     out = int(b[0])
 
     # parsing
@@ -12,6 +14,8 @@ def add(mathDef):
 
 def substract(mathDef):
     b = mathDef.split("-")
+    if len(b) == 0:
+        return 0
     out = int(b[0])
 
     # parsing
@@ -24,6 +28,8 @@ def substract(mathDef):
 
 def multiply(mathDef):
     b = mathDef.split("*")
+    if len(b) == 0:
+        return 0
     out = int(b[0])
 
     # parsing
@@ -36,6 +42,8 @@ def multiply(mathDef):
 
 def divide(mathDef):
     b = mathDef.split("/")
+    if len(b) == 0:
+        return 0
     out = int(b[0])
 
     # parsing
