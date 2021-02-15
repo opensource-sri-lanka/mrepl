@@ -13,10 +13,15 @@ def welcome():
 
 
 def prompt():
-    while True:
-        inp = input()
-        answer = "no answer"  # this variable will hold the answer of the input
-        print(answer)
+    print("Enter your equation: ")
+    # Hold the input
+    inp = input()
+    if (len(inp) > 0):
+        # find the operators
+        print("input detected")
+    else:
+        print("Please enter a valid equation")
+        prompt()
 
 
 main()
