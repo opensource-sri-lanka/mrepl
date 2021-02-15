@@ -1,25 +1,46 @@
 def add(mathDef):
-    out = 0
     b = mathDef.split("+")
+    out = int(b[0])
 
     # parsing
-    i = 0
+    i = 1
     while i < len(b):
         out += int(b[i])
         i += 1
     return out
 
 
-def substract(x, y):
-    output = x - y
-    return output
+def substract(mathDef):
+    b = mathDef.split("-")
+    out = int(b[0])
+
+    # parsing
+    i = 1
+    while i < len(b):
+        out -= int(b[i])
+        i += 1
+    return out
 
 
-def multiply(x, y):
-    output = x * y
-    return output
+def multiply(mathDef):
+    b = mathDef.split("*")
+    out = int(b[0])
+
+    # parsing
+    i = 1
+    while i < len(b):
+        out = out * int(b[i])
+        i += 1
+    return out
 
 
-def divide(x, y):
-    output = x / y
-    return output
+def divide(mathDef):
+    b = mathDef.split("/")
+    out = int(b[0])
+
+    # parsing
+    i = 1
+    while i < len(b):
+        out = out / int(b[i])
+        i += 1
+    return out
