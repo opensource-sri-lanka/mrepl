@@ -1,11 +1,15 @@
 import core.parse
 
 
+def main():
+    welcome()
+    prompt()
+
+
 def welcome():
     print("Welcome to MREPL")
     print("Use this at your own risk")
     print("Authors: Tarith Jayasooriya, Dinuda Yaggahavita")
-    prompt()
 
 
 def prompt():
@@ -15,4 +19,4 @@ def prompt():
         print(answer)
 
 
-welcome()
+main()
